@@ -42,6 +42,21 @@ a {
 .btn:hover {
   opacity: 0.8;
 }
+
+.section-heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.section-desc {
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
 /* =============== header =============== */
 .header {
   background: var(--header-bg);
@@ -188,4 +203,84 @@ a {
   object-fit: cover;
   border-radius: 0px 6px 6px 0px;
   position: relative;
+}
+
+/* =============== service =============== */
+.service {
+  padding: 170px 0;
+  background: #fff;
+}
+
+.service__heading {
+  text-align: center;
+}
+
+.section-desc {
+  text-align: center;
+  width: 46.8rem;
+  margin: 0 auto;
+}
+
+.service-row {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-img {
+  border-radius: 12px;
+  width: 57rem;
+  height: 57rem;
+  object-fit: cover;
+}
+
+.service__item {
+  display: flex;
+  width: 47rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 21px;
+  transition: 0.25s;
+}
+
+.service__item:hover {
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.service__item:hover .service-item__icon {
+  color: #fff;
+  background: #10375c;
+}
+.service-item__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 19px;
+  transition: 0.25s;
+}
+
+.service-item__heading {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.service-item__desc {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.service__list .btn {
+  margin-top: 70px;
 }
