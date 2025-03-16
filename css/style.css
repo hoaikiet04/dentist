@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-bg: #10375c;
+  --btn-action: #2e80ce;
+  --text-desc: #c9d2da;
+}
 html {
   font-size: 62.5%;
 }
@@ -10,4 +15,177 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+/* =============== common =============== */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100% - 48px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 20.5rem;
+  line-height: 6rem;
+  display: inline-block;
+  border-radius: 2.2rem;
+  background: var(--btn-action);
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* =============== header =============== */
+.header {
+  background: var(--header-bg);
+  min-height: 100vh;
+  padding-top: 3rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand .brand__text {
+  width: 5rem;
+  display: inline-block; /* Đảm bảo thẻ giữ kích thước */
+  cursor: pointer;
+}
+
+.brand .brand__text::before {
+  content: "Shine\A";
+  color: #fff;
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+  white-space: pre-wrap;
+  display: block;
+}
+
+.brand .brand__text::after {
+  content: "Smile";
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: block;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__link,
+.header__action--login {
+  color: #c9d2da;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+  padding: 8px 21px;
+}
+
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+  right: 8px;
+}
+
+.header__action--signup {
+  min-width: 14.4rem;
+  line-height: 4.4rem;
+  font-size: 1.6rem;
+}
+
+.header__action--login {
+  margin-right: 7px;
+}
+
+/* =============== hero ================= */
+.hero {
+  display: flex;
+  padding-top: 76px;
+  align-items: center;
+}
+
+.hero__content {
+  width: 44%;
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.14rem;
+}
+
+.hero__desc {
+  color: var(--text-desc);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67rem;
+  margin: 22px 0;
+}
+
+.hero__row {
+  margin-top: 22px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 38px;
+}
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67rem;
+}
+
+.hero-media {
+  flex: 1;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero__img-large {
+  width: 33rem;
+  height: 54rem;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: -6px;
+  z-index: 1;
+}
+
+.hero__img-small {
+  width: 21rem;
+  height: 41rem;
+  object-fit: cover;
+  border-radius: 0px 6px 6px 0px;
+  position: relative;
 }
